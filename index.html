@@ -1,0 +1,33 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodoro Clock Zipline</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheets/main.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h2 class="text-center">Pomodoro Clock v1.0</h2>
+		<div class="col-sm-6 text-center outerDiv">
+			<h3>#Break</h3>
+			<div id="breakCircle" class="circle"></div>
+			<button class="btn btn-success btn-lg" id="buttonPlusLeft">+</button>
+			<button class="btn btn-danger btn-lg" id="buttonMinusLeft">-</button>
+		</div>
+		<div class="col-sm-6 text-center outerDiv">
+			<h3>#Work</h3>
+			<div id="workCircle" class="circle"></div>
+			<button class="btn btn-success btn-lg" id="buttonPlusRight">+</button>
+			<button class="btn btn-danger btn-lg" id="buttonMinusRight">-</button>
+		</div>
+		<button style="margin-top:50px;"class="btn btn-lg btn-primary"><i class="fa fa-refresh"></i> Reset</button>
+	</div>
+
+</body>
+</html>

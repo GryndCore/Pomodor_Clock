@@ -1,0 +1,143 @@
+/* line 28, ../sass/main.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #2b2b2b !important;
+  color: #fefefe !important;
+}
+
+/* line 35, ../sass/main.scss */
+h3 {
+  margin-top: 0 !important;
+  margin-right: 5px;
+}
+
+/* line 39, ../sass/main.scss */
+.circle {
+  width: 200px;
+  height: 200px;
+  border: solid 2px green;
+  border-radius: 50%;
+  margin: auto;
+  padding-top: 75px;
+  font-size: 30px;
+  background-color: #2b2b2b !important;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 41, ../sass/main.scss */
+.circle:hover, .circle.on:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  background-color: rgba(0, 240, 0, 0.3) !important;
+  border: solid 2px rgba(0, 240, 0, 0.8);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 50, ../sass/main.scss */
+.on.circle:hover {
+  background-color: rgba(240, 0, 0, 0.3) !important;
+}
+
+/* line 55, ../sass/main.scss */
+.container {
+  height: 100%;
+  text-align: center;
+}
+
+/* line 59, ../sass/main.scss */
+.outerDiv {
+  margin-top: 50px;
+  position: relative;
+}
+
+/* line 64, ../sass/main.scss */
+#buttonPlusLeft {
+  position: absolute;
+  width: 45px;
+  left: 10%;
+  float: left;
+  top: 36px;
+}
+
+/* line 68, ../sass/main.scss */
+#buttonMinusLeft {
+  position: absolute;
+  width: 45px;
+  left: 10%;
+  float: left;
+  bottom: 0;
+}
+
+/* line 72, ../sass/main.scss */
+#buttonPlusRight {
+  position: absolute;
+  width: 45px;
+  right: 10%;
+  float: right;
+  top: 36px;
+}
+
+/* line 76, ../sass/main.scss */
+#buttonMinusRight {
+  position: absolute;
+  width: 45px;
+  right: 10%;
+  float: right;
+  bottom: 0;
+}
+
+/* line 80, ../sass/main.scss */
+#currBreak {
+  position: absolute;
+  width: 45px;
+  left: 10%;
+  float: left;
+  width: 35px;
+  top: 45%;
+}
+
+/* line 85, ../sass/main.scss */
+#currWork {
+  position: absolute;
+  width: 45px;
+  right: 10%;
+  float: right;
+  width: 35px;
+  top: 45%;
+}
+
+@media (max-width: 768px) {
+  /* line 92, ../sass/main.scss */
+  #buttonPlusLeft {
+    position: absolute;
+    width: 45px;
+    right: 10%;
+    float: right;
+    left: auto;
+    top: 36px;
+  }
+
+  /* line 97, ../sass/main.scss */
+  #buttonMinusLeft {
+    position: absolute;
+    width: 45px;
+    right: 10%;
+    float: right;
+    left: auto;
+    bottom: 0;
+  }
+
+  /* line 102, ../sass/main.scss */
+  .circle {
+    height: 150px;
+    width: 150px;
+    font-size: 20px;
+    padding-top: 60px;
+  }
+}

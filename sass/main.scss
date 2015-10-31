@@ -1,0 +1,109 @@
+$primary_color:#2B2B2B;
+@mixin circle{
+	width:200px;
+	height:200px;
+	border:solid 2px green;
+	border-radius:50%;
+	margin:auto;
+  padding-top:75px;
+  font-size:30px;
+  background-color:$primary_color !important;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@mixin rightPanel{
+	position:absolute;
+	width:45px;
+	right:10%;
+	float:right;
+}
+@mixin leftPanel{
+	position:absolute;
+	width:45px;
+	left:10%;
+	float:left;
+
+}
+html,body{
+	width:100%;
+	height:100%;
+	margin:0;
+	background-color:$primary_color !important;
+	color:#fefefe !important;
+}
+h3{
+  margin-top:0 !important;
+  margin-right:5px;
+}
+.circle{ @include circle; }
+
+.circle:hover{
+  opacity:0.5;
+  cursor:pointer;
+  background-color:rgba(0,240,0,0.3) !important;
+  border:solid 2px rgba(0,240,0,0.8);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.circle.on:hover{
+  @extend .circle:hover;
+  background-color:rgba(240,0,0,0.3) !important;
+}
+
+.container{
+	height:100%;
+  text-align:center;
+}
+.outerDiv{
+	margin-top:50px;
+	position:relative
+}
+
+#buttonPlusLeft{
+	@include leftPanel;
+	top:36px;
+}
+#buttonMinusLeft{
+	@include leftPanel;
+	bottom:0;
+}
+#buttonPlusRight{
+	@include rightPanel;
+	top:36px;
+}
+#buttonMinusRight{
+	@include rightPanel;
+	bottom:0;
+}
+#currBreak{
+	@include leftPanel;
+	width:35px;
+	top:45%;
+}
+#currWork{
+	@include rightPanel;
+	width:35px;
+	top:45%;
+}
+
+@media (max-width:768px){
+	#buttonPlusLeft{
+		@include rightPanel;
+		left:auto;
+		top:36px;
+	}
+	#buttonMinusLeft{
+		@include rightPanel;
+		left:auto;
+		bottom:0;
+	}
+  .circle{
+    height:150px;
+    width:150px;
+    font-size:20px;
+    padding-top:60px
+  }
+
+}
